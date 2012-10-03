@@ -25,7 +25,7 @@ fs.readFile('foo.txt', 'utf8', function (err, data) {
 http.createServer(function (req, res) {
   evsync.once('load', function (file) {
     res.writeHead(200);
-  　res.end(file);
+    res.end(file);
   });
   evsync.once('error', function (err) {
     res.writeHead(500);

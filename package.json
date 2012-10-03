@@ -16,7 +16,7 @@
   "author": "KOBA789 (Hidekazu Kobayashi)",
   "license": "MIT",
   "devDependencies": {
-    "mocha": "*"
+    "mocha": "*",
     "should": "~1.2.0"
   }
 }
