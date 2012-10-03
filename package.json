@@ -1,0 +1,22 @@
+{
+  "name": "evsync",
+  "version": "0.0.1",
+  "description": "This controls flow by events like flags.",
+  "main": "./lib/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "repo:node-event-sync.git"
+  },
+  "author": "KOBA789 (Hidekazu Kobayashi)",
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "*"
+    "should": "~1.2.0"
+  }
+}
