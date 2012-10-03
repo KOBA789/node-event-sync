@@ -1,16 +1,6 @@
-# EventSync
-
-This controls flow by events like flags.
-
-## Usage
-
-If you want to make a http server serving a static file and load file before handling the requests, you can put http.createServer() in the callback of fs.readFile(). But it makes a too deep nest.
-Now, with EventSync, you can write the code like this. 
-
-```JavaScript
 var fs = require('fs'),
     http = require('http'),
-    EventSync = require('evsync');
+    EventSync = require('../');
 
 var evsync = new EventSync();
 
@@ -32,4 +22,3 @@ http.createServer(function (req, res) {
     res.end('Failed to load the file.');
   });
 }).listen(8124);
-```
